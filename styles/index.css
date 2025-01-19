@@ -45,7 +45,7 @@ section{
 .display-flex{
     display: flex;
 }
-body{
+header,main{
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -184,6 +184,19 @@ body{
 .feature-details{
     color: #6C6C6C;
     margin-bottom: 16px;
+}
+/* footer */
+.footer{
+    max-width: 100vw;
+    background-color: #0A0826;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 50px;
+    line-height: 24px;
+}
+.social-icons i{
+    margin-right: 16px;
+    margin-top: 10px;
 }
 
 /* responsive */
