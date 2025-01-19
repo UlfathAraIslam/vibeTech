@@ -45,6 +45,10 @@ section{
 .display-flex{
     display: flex;
 }
+body{
+    max-width: 1400px;
+    margin: 0 auto;
+}
 /* navbar */
 /* TODO: remove space from left side */
 .navbar,.hero{
@@ -164,6 +168,23 @@ section{
 .hide{
     display: none;
 }
+/* feature */
+.feature{
+    gap: 96px;
+    align-items: center;
+}
+.feature-info{
+    max-width: 610px;
+}
+.feature-title{
+    font-size:2.3rem ;
+    color: #0A0826;
+    margin-bottom: 16px;
+}
+.feature-details{
+    color: #6C6C6C;
+    margin-bottom: 16px;
+}
 
 /* responsive */
 /* small device */
@@ -174,7 +195,9 @@ section{
         flex-direction: column;
         text-align: center;
     }
-    .hero{
+    .hero,
+    .feature
+    {
         flex-direction: column-reverse;
         height: auto;
         text-align: center;
