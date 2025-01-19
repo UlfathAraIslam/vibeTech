@@ -19,10 +19,18 @@
     font-style: normal;
   }
 /* shared styles */
+/* .header, main{
+max-width: 1400px;
+margin: 0 auto;
+} */
+section{
+    margin-bottom: 100px;
+}
 .btn-primary{
     background-color: #E02C6D;
     color: #FFFFFF;
     padding: 10px 24px;
+    border: none;
 }
 .display-flex{
     display: flex;
@@ -44,12 +52,44 @@
     text-decoration: none;
     color: #000000;
 }
+/* hero section */
+.hero{
+    /* height: 475px; */
+    justify-content: space-around;
+}
+.hero-info{
+    max-width:582px ;
+    align-items: center;
+}
+.hero-title{
+    font-size: 3.25rem;
+}
+.hero-title,.hero-details{
+    margin-bottom: 16px;
+}
+.hero-img{
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 /* responsive */
 /* small device */
 @media screen and (max-width:576px) {
     .navbar,
-    .list-items{
+    .list-items
+    {
         flex-direction: column;
         text-align: center;
+    }
+    .hero{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .hero-img{
+        margin-bottom: 50px;
+        margin: 0 auto;
+    }
+    .hero-info> .btn-primary{
+        margin-bottom: 50px;
     }
 }
