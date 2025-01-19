@@ -51,8 +51,12 @@ section{
 } */
 /* navbar */
 /* TODO: remove space from left side */
+.navbar{
+    max-width: 1320px;
+    margin: 0 auto;
+}
 .navbar,.hero{
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .navbar{
